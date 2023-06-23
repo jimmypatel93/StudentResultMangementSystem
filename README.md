@@ -6,8 +6,16 @@ Front-end technologies:- HTML/CSS, ReactJS
 Back-end technologies:- Java, SpringBoot
 Database:- MySQL
 
-Start the server by starting the springboot application. First create a jar from by doing "mvn clean install" command. The jar file will be created in the target folder. After that, run "java -jar StudentResultMangementSystem-0.0.1.jar" command. start the front end by starting the ReactJS application. First enter the command "npm i" from root directory and then enter command "npm start" to run the application. 
+# Server
+1. Start the server by starting the spring-boot application.
+2. Create a jar using the "mvn clean install" command. The jar file will be created in the target folder.
+3. Start the API server by running the "java -jar StudentResultMangementSystem-0.0.1.jar" command.
+
+# Client
+1. Run the "npm i" command from the root directory to install all the required packages.
+2. In the .env file, replace the value of the "REACT_APP_SERVER_URL" with the server URL.
+3. Run the "npm start" command to start the application.
 
 Note:-
-If you are facing the error conencting the client and server(CORS error), please check the url in the main method under StudentResultManagementSystemApplication class under the package com.shyftlabs.io
-
+If you are facing any error connecting the client and server(CORS error), 
+go to StudentResultManagementSystemApplication class which can be found in com.shyftlabs.io package inside the server directory, and set the URL (react app URL) in the allowedOrigins method.
