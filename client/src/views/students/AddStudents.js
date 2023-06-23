@@ -46,6 +46,7 @@ const AddStudents = () => {
       .then((res) => {
         if (res.data.success) {
           handleSuccessMessage('Student created successfully!');
+          setStudent(STUDENT_INIT_DATA);
         } else {
           handleErrorMessage(res.data.message ?? 'Error creating student!');
         }
@@ -58,7 +59,6 @@ const AddStudents = () => {
       })
       .finally(() => {
         setIsSubmitting(false);
-        setStudent(STUDENT_INIT_DATA);
       });
   };
 
