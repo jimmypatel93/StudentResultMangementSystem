@@ -7,9 +7,11 @@ Back-end technologies:- Java, SpringBoot
 Database:- MySQL
 
 # Server
-1. Start the server by starting the spring-boot application.
-2. Create a jar using the "mvn clean install" command. The jar file will be created in the target folder.
-3. Start the API server by running the "java -jar StudentResultMangementSystem-0.0.1.jar" command.
+1. Create a new database in MySQL with resultmangement
+2. Update the application.properties file with the username and password of your MySQL database.
+3. Start the server by starting the spring-boot application.
+4. Create a jar using the "mvn clean install" command. The jar file will be created in the target folder.
+5. Start the API server by running the "java -jar StudentResultMangementSystem-0.0.1.jar" command.
 
 # Client
 1. Run the "npm i" command from the root directory to install all the required packages.
